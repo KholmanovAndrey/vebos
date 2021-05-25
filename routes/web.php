@@ -27,6 +27,7 @@ Route::group([
     'as' => 'admin.',
     'namespace' => 'Admin'
 ], function() {
+    Route::get('/', 'HomeController@index')->name('home');
     // Projects
     Route::middleware('auth')->resource('/project', 'ProjectController');
 });

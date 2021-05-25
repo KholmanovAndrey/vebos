@@ -22,7 +22,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('projects.index');
+        return view('admin.projects.index');
     }
 
     /**
